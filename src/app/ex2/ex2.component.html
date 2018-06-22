@@ -1,0 +1,13 @@
+<h1>Exercice 2</h1>
+<div>
+  <input type="text" value="{{user.name}}" (input)="user.name = inputName.value" #inputName>
+  <br/>
+  <input type="text" value="{{user.name}}" (input)="changeName($event)">
+</div>
+<div class="container">
+  <div class="infos">
+    <h1>{{ user.name }}</h1>
+    <h3>{{ user.jobTitle }}</h3>
+  </div>
+  <img class="thumbnail" src="{{user.image}}" alt="user image">
+</div>
